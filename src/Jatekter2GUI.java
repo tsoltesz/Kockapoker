@@ -1,0 +1,1490 @@
+
+import java.awt.Color;
+import java.awt.Desktop;
+import java.awt.Frame;
+import java.io.File;
+import java.io.IOException;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author TeszTa
+ */
+public class Jatekter2GUI extends javax.swing.JFrame {
+
+    Jatekos j[]; int akt; String feladatok[]; String nevek[];
+    
+    public Jatekter2GUI() {
+        initComponents();
+        akt=0;
+        setBackground(new Color(1.0f,1.0f,1.0f,0.0f));
+        setLocationRelativeTo(null);
+        Sugo.setVisible(false);
+        j=new Jatekos[2];
+        j[0]=new Jatekos();
+        j[1]=new Jatekos();
+        f1.setVisible(false);
+        f2.setVisible(false);
+        f3.setVisible(false);
+        f4.setVisible(false);
+        f5.setVisible(false);
+           jLabel14.setVisible(false);
+           jLabel15.setVisible(false);
+           jLabel16.setVisible(false);
+           jLabel17.setVisible(false);
+           jLabel18.setVisible(false);
+           jLabel19.setVisible(false);
+           jLabel20.setVisible(false);
+           jLabel21.setVisible(false);
+           jLabel22.setVisible(false);
+           par10.setVisible(false);
+           par1.setVisible(false);
+           trip10.setVisible(false);
+           trip1.setVisible(false);
+           quad10.setVisible(false);
+           quad1.setVisible(false);
+           poker10.setVisible(false);
+           poker1.setVisible(false);
+           dp10.setVisible(false);
+           dp1.setVisible(false);
+           ks10.setVisible(false);
+           ks1.setVisible(false);
+           ns10.setVisible(false);
+           ns1.setVisible(false);
+           fh10.setVisible(false);
+           fh1.setVisible(false);
+           kuka10.setVisible(false);
+           kuka1.setVisible(false);
+           feladatok=new String[7];
+           feladatok[0]="Dobj legalább egy hatost";
+           feladatok[1]="Dobj legalább két hatost";
+           feladatok[2]="A dobott számok összege legyen páros";
+           feladatok[3]="A dobott számok összege legyen páratlan";
+           feladatok[4]="Dobj pontosan egy darab hatost";
+           feladatok[5]="Dobj pontosan két darab hatost";
+           feladatok[6]="A dobott számok összege ne legyen több 6-nál";
+        setIconImage(new ImageIcon(getClass().getResource("/design/logo.png")).getImage());
+       
+    }
+    public Jatekter2GUI(String j1, String j2) {
+        initComponents();
+        akt=0;
+        setBackground(new Color(1.0f,1.0f,1.0f,0.0f));
+        setLocationRelativeTo(null);
+        Sugo.setVisible(false);
+        j=new Jatekos[2];
+        j[0]=new Jatekos();
+        j[1]=new Jatekos();
+        f1.setVisible(false);
+        f2.setVisible(false);
+        f3.setVisible(false);
+        f4.setVisible(false);
+        f5.setVisible(false);
+           jLabel14.setVisible(false);
+           jLabel15.setVisible(false);
+           jLabel16.setVisible(false);
+           jLabel17.setVisible(false);
+           jLabel18.setVisible(false);
+           jLabel19.setVisible(false);
+           jLabel20.setVisible(false);
+           jLabel21.setVisible(false);
+           jLabel22.setVisible(false);
+           par10.setVisible(false);
+           par1.setVisible(false);
+           trip10.setVisible(false);
+           trip1.setVisible(false);
+           quad10.setVisible(false);
+           quad1.setVisible(false);
+           poker10.setVisible(false);
+           poker1.setVisible(false);
+           dp10.setVisible(false);
+           dp1.setVisible(false);
+           ks10.setVisible(false);
+           ks1.setVisible(false);
+           ns10.setVisible(false);
+           ns1.setVisible(false);
+           fh10.setVisible(false);
+           fh1.setVisible(false);
+           kuka10.setVisible(false);
+           kuka1.setVisible(false);
+           feladatok=new String[7];
+           feladatok[0]="Dobj legalább egy hatost";
+           feladatok[1]="Dobj legalább két hatost";
+           feladatok[2]="A dobott számok összege legyen páros";
+           feladatok[3]="A dobott számok összege legyen páratlan";
+           feladatok[4]="Dobj pontosan egy darab hatost";
+           feladatok[5]="Dobj pontosan két darab hatost";
+           feladatok[6]="A dobott számok összege ne legyen több 6-nál";
+        setIconImage(new ImageIcon(getClass().getResource("/design/logo.png")).getImage());
+        nevek=new String[2];
+        nevek[0]=j1;
+        nevek[1]=j2;
+        aktualisjatekosneve.setText(nevek[akt]);
+        int rand=(int)(Math.random()*feladatok.length);
+        feladat.setText(feladatok[rand]);
+        quiz.setVisible(false);
+        vege.setVisible(false);
+       
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        Jatekter = new javax.swing.JPanel();
+        f1 = new javax.swing.JLabel();
+        f2 = new javax.swing.JLabel();
+        f3 = new javax.swing.JLabel();
+        f4 = new javax.swing.JLabel();
+        f5 = new javax.swing.JLabel();
+        egyeskocka = new javax.swing.JLabel();
+        ketteskocka = new javax.swing.JLabel();
+        harmaskocka = new javax.swing.JLabel();
+        negyeskocka = new javax.swing.JLabel();
+        otoskocka = new javax.swing.JLabel();
+        doboemberke = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        p100 = new javax.swing.JLabel();
+        p1 = new javax.swing.JLabel();
+        p10 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        par1 = new javax.swing.JLabel();
+        par10 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        trip10 = new javax.swing.JLabel();
+        trip1 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        quad10 = new javax.swing.JLabel();
+        quad1 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        poker10 = new javax.swing.JLabel();
+        poker1 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        dp10 = new javax.swing.JLabel();
+        dp1 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        ks10 = new javax.swing.JLabel();
+        aktualisjatekosneve = new javax.swing.JLabel();
+        ks1 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        ns10 = new javax.swing.JLabel();
+        ns1 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        fh10 = new javax.swing.JLabel();
+        fh1 = new javax.swing.JLabel();
+        korok = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        kuka10 = new javax.swing.JLabel();
+        kuka1 = new javax.swing.JLabel();
+        quiz = new javax.swing.JPanel();
+        feladat = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel30 = new javax.swing.JLabel();
+        vege = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        Sugo = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        jLabel25 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea5 = new javax.swing.JTextArea();
+        jButton1 = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Jatekter.setBackground(new java.awt.Color(255, 255, 255));
+        Jatekter.setOpaque(false);
+        Jatekter.setLayout(null);
+
+        f1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/zar.png"))); // NOI18N
+        Jatekter.add(f1);
+        f1.setBounds(1050, 260, 40, 50);
+
+        f2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/zar.png"))); // NOI18N
+        Jatekter.add(f2);
+        f2.setBounds(1050, 340, 40, 50);
+
+        f3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/zar.png"))); // NOI18N
+        Jatekter.add(f3);
+        f3.setBounds(1050, 420, 40, 50);
+
+        f4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/zar.png"))); // NOI18N
+        Jatekter.add(f4);
+        f4.setBounds(1050, 500, 40, 50);
+
+        f5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/zar.png"))); // NOI18N
+        Jatekter.add(f5);
+        f5.setBounds(1050, 580, 40, 50);
+
+        egyeskocka.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/1.png"))); // NOI18N
+        egyeskocka.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                egyeskockaMouseClicked(evt);
+            }
+        });
+        Jatekter.add(egyeskocka);
+        egyeskocka.setBounds(1000, 230, 60, 60);
+
+        ketteskocka.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/2.png"))); // NOI18N
+        ketteskocka.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ketteskockaMouseClicked(evt);
+            }
+        });
+        Jatekter.add(ketteskocka);
+        ketteskocka.setBounds(1000, 310, 60, 60);
+
+        harmaskocka.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/3.png"))); // NOI18N
+        harmaskocka.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                harmaskockaMouseClicked(evt);
+            }
+        });
+        Jatekter.add(harmaskocka);
+        harmaskocka.setBounds(1000, 390, 60, 60);
+
+        negyeskocka.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/4.png"))); // NOI18N
+        negyeskocka.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                negyeskockaMouseClicked(evt);
+            }
+        });
+        Jatekter.add(negyeskocka);
+        negyeskocka.setBounds(1000, 470, 60, 60);
+
+        otoskocka.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/5.png"))); // NOI18N
+        otoskocka.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                otoskockaMouseClicked(evt);
+            }
+        });
+        Jatekter.add(otoskocka);
+        otoskocka.setBounds(1000, 550, 60, 60);
+
+        doboemberke.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/doboharomszog1.png"))); // NOI18N
+        doboemberke.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                doboemberkeMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                doboemberkeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                doboemberkeMouseExited(evt);
+            }
+        });
+        Jatekter.add(doboemberke);
+        doboemberke.setBounds(930, 10, 200, 191);
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/pontokszoveg.png"))); // NOI18N
+        Jatekter.add(jLabel13);
+        jLabel13.setBounds(850, 700, 80, 43);
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/6z.png"))); // NOI18N
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel7);
+        jLabel7.setBounds(50, 450, 100, 70);
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/1z.png"))); // NOI18N
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel8);
+        jLabel8.setBounds(50, 100, 100, 70);
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/2z.png"))); // NOI18N
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel9);
+        jLabel9.setBounds(50, 170, 100, 70);
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/3z.png"))); // NOI18N
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel10);
+        jLabel10.setBounds(50, 240, 100, 70);
+
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/4z.png"))); // NOI18N
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel11);
+        jLabel11.setBounds(50, 310, 100, 70);
+
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/5z.png"))); // NOI18N
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel12);
+        jLabel12.setBounds(50, 380, 100, 70);
+
+        p100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(p100);
+        p100.setBounds(940, 690, 30, 60);
+
+        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(p1);
+        p1.setBounds(1000, 690, 30, 60);
+
+        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(p10);
+        p10.setBounds(970, 690, 30, 60);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/parz.png"))); // NOI18N
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel14);
+        jLabel14.setBounds(20, 600, 40, 50);
+
+        par1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(par1);
+        par1.setBounds(40, 640, 28, 70);
+
+        par10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(par10);
+        par10.setBounds(10, 640, 28, 70);
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/tripz.png"))); // NOI18N
+        jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel15MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel15);
+        jLabel15.setBounds(110, 600, 40, 50);
+
+        trip10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(trip10);
+        trip10.setBounds(100, 640, 28, 70);
+
+        trip1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(trip1);
+        trip1.setBounds(130, 640, 28, 70);
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/quadz.png"))); // NOI18N
+        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel16MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel16);
+        jLabel16.setBounds(200, 600, 40, 50);
+
+        quad10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(quad10);
+        quad10.setBounds(190, 640, 28, 70);
+
+        quad1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(quad1);
+        quad1.setBounds(220, 640, 28, 70);
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/pokerz.png"))); // NOI18N
+        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel17MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel17);
+        jLabel17.setBounds(290, 600, 40, 50);
+
+        poker10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(poker10);
+        poker10.setBounds(280, 640, 28, 70);
+
+        poker1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(poker1);
+        poker1.setBounds(310, 640, 28, 70);
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/dpz.png"))); // NOI18N
+        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel18MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel18);
+        jLabel18.setBounds(380, 600, 40, 50);
+
+        dp10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(dp10);
+        dp10.setBounds(370, 640, 28, 70);
+
+        dp1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(dp1);
+        dp1.setBounds(400, 640, 28, 70);
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/ksz.png"))); // NOI18N
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel19);
+        jLabel19.setBounds(470, 600, 40, 50);
+
+        ks10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(ks10);
+        ks10.setBounds(460, 640, 28, 70);
+
+        aktualisjatekosneve.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        aktualisjatekosneve.setForeground(new java.awt.Color(255, 255, 255));
+        aktualisjatekosneve.setText("Jatekos neve ");
+        Jatekter.add(aktualisjatekosneve);
+        aktualisjatekosneve.setBounds(60, 30, 120, 22);
+
+        ks1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(ks1);
+        ks1.setBounds(490, 640, 28, 70);
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/nsz.png"))); // NOI18N
+        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel20MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel20);
+        jLabel20.setBounds(570, 600, 40, 50);
+
+        ns10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(ns10);
+        ns10.setBounds(560, 640, 28, 70);
+
+        ns1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(ns1);
+        ns1.setBounds(590, 640, 28, 70);
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/fhz.png"))); // NOI18N
+        jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel21MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel21);
+        jLabel21.setBounds(670, 600, 40, 50);
+
+        fh10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(fh10);
+        fh10.setBounds(660, 640, 28, 70);
+
+        fh1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(fh1);
+        fh1.setBounds(690, 640, 28, 70);
+
+        korok.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        korok.setForeground(new java.awt.Color(255, 255, 255));
+        korok.setText("0/3");
+        Jatekter.add(korok);
+        korok.setBounds(990, 170, 50, 28);
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/kukaz.png"))); // NOI18N
+        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel22MouseClicked(evt);
+            }
+        });
+        Jatekter.add(jLabel22);
+        jLabel22.setBounds(770, 600, 40, 50);
+
+        kuka10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(kuka10);
+        kuka10.setBounds(760, 640, 28, 70);
+
+        kuka1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sz0.png"))); // NOI18N
+        Jatekter.add(kuka1);
+        kuka1.setBounds(790, 640, 28, 70);
+
+        quiz.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        quiz.setOpaque(false);
+        quiz.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        feladat.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        feladat.setForeground(new java.awt.Color(255, 255, 255));
+        feladat.setText("Feladat");
+        quiz.add(feladat, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, -1, -1));
+
+        jButton2.setBackground(new java.awt.Color(153, 0, 0));
+        jButton2.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Dobok");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        quiz.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, 160, 80));
+
+        jLabel30.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setText("nyerte az első kört. Most egy feladat áll elébe");
+        quiz.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
+
+        Jatekter.add(quiz);
+        quiz.setBounds(250, 130, 620, 380);
+
+        getContentPane().add(Jatekter, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 1170, 740));
+
+        vege.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        vege.setForeground(new java.awt.Color(255, 255, 255));
+        vege.setText("Jatekos neve ");
+        getContentPane().add(vege, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, 640, 90));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/alap.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 69, -1, 910));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/miniaturizalas.png"))); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel2MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel2MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jLabel2MouseReleased(evt);
+            }
+        });
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 10, -1, 60));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/kilepes.png"))); // NOI18N
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel3MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel3MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jLabel3MouseReleased(evt);
+            }
+        });
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 10, -1, 60));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/sugokikapcsolt.png"))); // NOI18N
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel4MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel4MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jLabel4MouseReleased(evt);
+            }
+        });
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 0, 50, 90));
+
+        Sugo.setBackground(new java.awt.Color(255, 255, 255));
+        Sugo.setOpaque(false);
+        Sugo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel5.setText("A súgó aktiválva van");
+        Sugo.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/nyiljobbra.png"))); // NOI18N
+        Sugo.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 80, 71, 32));
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea2.setRows(5);
+        jTextArea2.setText("Itt látható mit dobtál.\nHa valamelyik kockát szeretnéd \nmegtartani kattints rá, \na zár ikon megjelenik mellette.\nHa megnyomod mégegyszer a gombot \na zárral ellátott kockák nem fognak \nmegváltozni.\nHa újból rákattintasz a zár ikon\neltűnik, újra lehet vele dobni. \nEgy kis kör után minden az eredeti\nhelyzetbe áll.");
+        jScrollPane2.setViewportView(jTextArea2);
+
+        Sugo.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 280, 272, 206));
+
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/nyiljobbra.png"))); // NOI18N
+        Sugo.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 290, 71, 32));
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/nyilbalra.png"))); // NOI18N
+        Sugo.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, -1, -1));
+
+        jTextArea3.setEditable(false);
+        jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea3.setRows(5);
+        jTextArea3.setText("Kattints az ikonra, hogy dobj.\nAz ikon alatti szám azt mutatja, hogy\na körből hány dobásod maradt még.\nHa a dobó figura megáll, választanod\nkell, hogy pontot kapj.");
+        jScrollPane3.setViewportView(jTextArea3);
+
+        Sugo.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, 310, 120));
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/nyille.png"))); // NOI18N
+        Sugo.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 490, -1, -1));
+
+        jTextArea4.setEditable(false);
+        jTextArea4.setColumns(20);
+        jTextArea4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea4.setRows(5);
+        jTextArea4.setText("Itt kell választanod,\nhogy hova sorolják be a pontodat.\nmellete ha megjelenik a kis szám azt\njelzi hány darabot sikerült dobnod\nbelőle.\nCsak egyszer használhatsz fel egy \nkockát, azután pirossá válik.\nHa ebben a körben végeztél, lennt\nmég van teendő");
+        jScrollPane4.setViewportView(jTextArea4);
+
+        Sugo.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, 280, 180));
+
+        jTextArea5.setEditable(false);
+        jTextArea5.setColumns(20);
+        jTextArea5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea5.setRows(5);
+        jTextArea5.setText("A játék ezen része csak akkor látszik\nha már végeztél az előző körrel.\nA feladatod ugyan ez, besorolni\nhol szeretnél pontot kapni.\nAz hogy hol mire lehet pontot kapni\na \"bővebben\"-ben található.");
+        jScrollPane5.setViewportView(jTextArea5);
+
+        Sugo.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 280, 130));
+
+        jButton1.setBackground(new java.awt.Color(204, 0, 51));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 3, 11)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Bővebben...");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        Sugo.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
+
+        getContentPane().add(Sugo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 1170, 740));
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        setState(Frame.ICONIFIED);
+       
+       
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    //Sugó gomb
+    private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
+       // jLabel4.setIcon(new ImageIcon(getClass().getResource("/design/sugoerintett.png")));
+    }//GEN-LAST:event_jLabel4MouseEntered
+
+    private void jLabel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseExited
+        //jLabel4.setIcon(new ImageIcon (getClass().getResource("/design/sugo.png")));
+    }//GEN-LAST:event_jLabel4MouseExited
+
+    private void jLabel4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MousePressed
+       // jLabel4.setIcon(new ImageIcon (getClass().getResource("/design/sugonyomott.png")));
+    }//GEN-LAST:event_jLabel4MousePressed
+
+    private void jLabel4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseReleased
+        //jLabel4.setIcon(new ImageIcon (getClass().getResource("/design/sugo.png")));
+    }//GEN-LAST:event_jLabel4MouseReleased
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        
+       
+            try {
+        File myFile = new File(getClass().getResource("sugo.pdf").getFile());
+        Desktop.getDesktop().open(myFile);
+    } catch (IOException ex) {
+        // no application registered for PDFs
+    }
+        
+        
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    // Kilépés gomb
+    private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseEntered
+        jLabel3.setIcon(new ImageIcon(getClass().getResource("/design/kilepeserintett.png")));
+    }//GEN-LAST:event_jLabel3MouseEntered
+
+    private void jLabel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseExited
+        jLabel3.setIcon(new ImageIcon (getClass().getResource("/design/kilepes.png")));
+    }//GEN-LAST:event_jLabel3MouseExited
+
+    private void jLabel3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MousePressed
+        jLabel3.setIcon(new ImageIcon (getClass().getResource("/design/kilepesnyomott.png")));
+    }//GEN-LAST:event_jLabel3MousePressed
+
+    private void jLabel3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseReleased
+        jLabel3.setIcon(new ImageIcon (getClass().getResource("/design/kilepes.png")));
+    }//GEN-LAST:event_jLabel3MouseReleased
+
+    private void doboemberkeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doboemberkeMouseClicked
+        if (j[akt].getKor()!=3){
+        korok.setText(j[akt].getKor()+1+"/3");
+        j[akt].Dobas();
+        egyeskocka.setIcon(new ImageIcon (getClass().getResource("/design/"+j[akt].getDobasAt(0)+".png")));
+        ketteskocka.setIcon(new ImageIcon (getClass().getResource("/design/"+j[akt].getDobasAt(1)+".png")));
+        harmaskocka.setIcon(new ImageIcon (getClass().getResource("/design/"+j[akt].getDobasAt(2)+".png")));
+        negyeskocka.setIcon(new ImageIcon (getClass().getResource("/design/"+j[akt].getDobasAt(3)+".png")));
+        otoskocka.setIcon(new ImageIcon (getClass().getResource("/design/"+j[akt].getDobasAt(4)+".png")));
+        if (j[akt].getKor()==3){
+            doboemberke.setIcon(new ImageIcon(getClass().getResource("/design/doboharomszog3.png")));
+            
+        }
+        }
+    }//GEN-LAST:event_doboemberkeMouseClicked
+
+    private void doboemberkeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doboemberkeMouseEntered
+        if (j[akt].getKor()!=3){
+        doboemberke.setIcon(new ImageIcon(getClass().getResource("/design/doboharomszog2.png")));
+        }
+    }//GEN-LAST:event_doboemberkeMouseEntered
+
+    private void doboemberkeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doboemberkeMouseExited
+       if (j[akt].getKor()!=3){
+        doboemberke.setIcon(new ImageIcon(getClass().getResource("/design/doboharomszog1.png")));
+       }
+    }//GEN-LAST:event_doboemberkeMouseExited
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].isUres(1)){
+        int szamlalo=j[akt].Egyesek();
+        j[akt].Pont(szamlalo);
+        jLabel8.setText("x"+szamlalo);
+        jLabel8.setIcon(new ImageIcon(getClass().getResource("/design/1.png")));
+        UpdateOsszpont();
+        masodikKor();
+        }
+        
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+       if (j[akt].getKor()!=0 && j[akt].isUres(2)){
+        int szamlalo=j[akt].Kettesek();
+        j[akt].Pont(szamlalo*2);
+        jLabel9.setText("x"+szamlalo);
+        jLabel9.setIcon(new ImageIcon(getClass().getResource("/design/2.png")));
+        UpdateOsszpont();
+        masodikKor();
+       }
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].isUres(3)){
+        int szamlalo=j[akt].Harmasok();
+        j[akt].Pont(szamlalo*3);
+        jLabel10.setText("x"+szamlalo);
+        jLabel10.setIcon(new ImageIcon(getClass().getResource("/design/3.png")));
+        UpdateOsszpont();
+        masodikKor();
+        }
+    }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].isUres(4)){
+        int szamlalo=j[akt].Negyesek();
+        j[akt].Pont(szamlalo*4);
+        jLabel11.setText("x"+szamlalo);
+        jLabel11.setIcon(new ImageIcon(getClass().getResource("/design/4.png")));
+        UpdateOsszpont();
+        masodikKor();
+        }
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].isUres(5)){
+        int szamlalo=j[akt].Otosok();
+        j[akt].Pont(szamlalo*5);
+        jLabel12.setText("x"+szamlalo);
+        jLabel12.setIcon(new ImageIcon(getClass().getResource("/design/5.png")));
+        UpdateOsszpont();
+        masodikKor();
+        }
+    }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].isUres(6)){
+        int szamlalo=j[akt].Hatosok();
+        j[akt].Pont(szamlalo*6);
+        jLabel7.setText("x"+szamlalo);
+        jLabel7.setIcon(new ImageIcon(getClass().getResource("/design/6.png")));
+        UpdateOsszpont();
+        masodikKor();
+        }
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void egyeskockaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_egyeskockaMouseClicked
+        if (j[akt].getKor()!=0){
+            j[akt].setDobhatoAt(0, !j[akt].getDobhato()[0]);
+            UpdateKocka();
+        }
+    }//GEN-LAST:event_egyeskockaMouseClicked
+
+    private void ketteskockaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ketteskockaMouseClicked
+        if (j[akt].getKor()!=0){
+            j[akt].setDobhatoAt(1, !j[akt].getDobhato()[1]);
+            UpdateKocka();
+        }
+    }//GEN-LAST:event_ketteskockaMouseClicked
+
+    private void harmaskockaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_harmaskockaMouseClicked
+        if (j[akt].getKor()!=0){
+            j[akt].setDobhatoAt(2, !j[akt].getDobhato()[2]);
+            UpdateKocka();
+        }
+    }//GEN-LAST:event_harmaskockaMouseClicked
+
+    private void negyeskockaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_negyeskockaMouseClicked
+       if (j[akt].getKor()!=0){
+            j[akt].setDobhatoAt(3, !j[akt].getDobhato()[3]);
+            UpdateKocka();
+        }
+    }//GEN-LAST:event_negyeskockaMouseClicked
+
+    private void otoskockaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_otoskockaMouseClicked
+        if (j[akt].getKor()!=0){
+            j[akt].setDobhatoAt(4, !j[akt].getDobhato()[4]);
+            UpdateKocka();
+        }
+    }//GEN-LAST:event_otoskockaMouseClicked
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].getpar()==-1){
+        jLabel14.setIcon(new ImageIcon(getClass().getResource("/design/parp.png")));
+        int pont=j[akt].Par();
+        j[akt].Pont(pont);
+        UpdateOsszpont();
+        if (Integer.toString(pont).length()==1){
+            par1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont)+".png")));
+        }
+        else {
+            par1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(1, 2)+".png")));
+            par10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(0, 1)+".png")));
+        }
+        }
+    }//GEN-LAST:event_jLabel14MouseClicked
+
+    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].gettripla()==-1){
+        jLabel15.setIcon(new ImageIcon(getClass().getResource("/design/tripp.png")));
+        int pont=j[akt].Tripla();
+        j[akt].Pont(pont);
+        UpdateOsszpont();
+        if (Integer.toString(pont).length()==1){
+            trip1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont)+".png")));
+        }
+        else {
+            trip1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(1, 2)+".png")));
+            trip10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(0, 1)+".png")));
+        }
+        }
+    }//GEN-LAST:event_jLabel15MouseClicked
+
+    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].getquadra()==-1){
+        jLabel16.setIcon(new ImageIcon(getClass().getResource("/design/quadp.png")));
+        int pont=j[akt].Quadra();
+        j[akt].Pont(pont);
+        UpdateOsszpont();
+        if (Integer.toString(pont).length()==1){
+            quad1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont)+".png")));
+        }
+        else {
+            quad1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(1, 2)+".png")));
+            quad10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(0, 1)+".png")));
+        }
+        }
+    }//GEN-LAST:event_jLabel16MouseClicked
+
+    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].getpoker()==-1){
+        jLabel17.setIcon(new ImageIcon(getClass().getResource("/design/pokerp.png")));
+        int pont=j[akt].Poker();
+        j[akt].Pont(pont);
+        UpdateOsszpont();
+        if (Integer.toString(pont).length()==1){
+            poker1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont)+".png")));
+        }
+        else {
+            poker1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(1, 2)+".png")));
+            poker10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(0, 1)+".png")));
+        }
+        }
+    }//GEN-LAST:event_jLabel17MouseClicked
+
+    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].getduplapar()==-1){
+        jLabel18.setIcon(new ImageIcon(getClass().getResource("/design/dpp.png")));
+        int pont=j[akt].duplaPar();
+        j[akt].Pont(pont);
+        UpdateOsszpont();
+        if (Integer.toString(pont).length()==1){
+            dp1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont)+".png")));
+        }
+        else {
+            dp1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(1, 2)+".png")));
+            dp10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(0, 1)+".png")));
+        }
+        }
+    }//GEN-LAST:event_jLabel18MouseClicked
+
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].getkissor()==-1){
+        jLabel19.setIcon(new ImageIcon(getClass().getResource("/design/ksp.png")));
+        int pont=j[akt].kisSor();
+        j[akt].Pont(pont);
+        UpdateOsszpont();
+        if (Integer.toString(pont).length()==1){
+            ks1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont)+".png")));
+        }
+        else {
+            ks1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(1, 2)+".png")));
+            ks10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(0, 1)+".png")));
+        }
+        }
+    }//GEN-LAST:event_jLabel19MouseClicked
+
+    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].getnagysor()==-1){
+        jLabel20.setIcon(new ImageIcon(getClass().getResource("/design/nsp.png")));
+        int pont=j[akt].nagySor();
+        j[akt].Pont(pont);
+        UpdateOsszpont();
+        if (Integer.toString(pont).length()==1){
+            ns1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont)+".png")));
+        }
+        else {
+            ns1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(1, 2)+".png")));
+            ns10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(0, 1)+".png")));
+        }
+        }
+    }//GEN-LAST:event_jLabel20MouseClicked
+
+    private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
+        if (j[akt].getKor()!=0&& j[akt].getfullhouse()==-1){
+        jLabel21.setIcon(new ImageIcon(getClass().getResource("/design/fhp.png")));
+        int pont=j[akt].fullHouse();
+        j[akt].Pont(pont);
+        UpdateOsszpont();
+        if (Integer.toString(pont).length()==1){
+            fh1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont)+".png")));
+        }
+        else {
+            fh1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(1, 2)+".png")));
+            fh10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(0, 1)+".png")));
+        }
+        }
+    }//GEN-LAST:event_jLabel21MouseClicked
+
+    private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
+        if (j[akt].getKor()!=0 && j[akt].getkuka()==-1){
+        jLabel22.setIcon(new ImageIcon(getClass().getResource("/design/kukap.png")));
+        int pont=j[akt].kuka();
+        j[akt].Pont(pont);
+        UpdateOsszpont();
+        if (Integer.toString(pont).length()==1){
+            kuka1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont)+".png")));
+        }
+        else {
+            kuka1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(1, 2)+".png")));
+            kuka10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+Integer.toString(pont).substring(0, 1)+".png")));
+        }
+        }
+    }//GEN-LAST:event_jLabel22MouseClicked
+
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+       jLabel2.setIcon(new ImageIcon (getClass().getResource("/design/miniaturizalaserintett.png")));
+    }//GEN-LAST:event_jLabel2MouseEntered
+
+    private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseExited
+        jLabel2.setIcon(new ImageIcon (getClass().getResource("/design/miniaturizalas.png")));
+    }//GEN-LAST:event_jLabel2MouseExited
+
+    private void jLabel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MousePressed
+        jLabel2.setIcon(new ImageIcon (getClass().getResource("/design/miniaturizalasnyomott.png")));
+    }//GEN-LAST:event_jLabel2MousePressed
+
+    private void jLabel2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseReleased
+        jLabel2.setIcon(new ImageIcon (getClass().getResource("/design/miniaturizalas.png")));
+    }//GEN-LAST:event_jLabel2MouseReleased
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if (Desktop.isDesktopSupported()) {
+    try {
+        File myFile = new File("sugo.pdf");
+        Desktop.getDesktop().open(myFile);
+    } catch (IOException ex) {
+        // no application registered for PDFs
+    }
+}
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        if (jButton2.getText().equals("Dobok")){
+            j[0].Pontn();
+            j[1].Pontn();
+        int dobasok[]=new int[5];
+        for (int i=0;i<5;i++){
+            dobasok[i]=(int)(Math.random()*6)+1;
+        }
+        if (feladat.getText().equals(feladatok[0])){
+            for (int i=0;i<5;i++){
+                if (dobasok[i]==6){
+                    j[akt].Pont(6);
+                    break;
+                }
+            }
+        }
+        else if (feladat.getText().equals(feladatok[1])){
+            int ossz=0;
+            for (int i=0;i<5;i++){
+                if (dobasok[i]==6){
+                    ossz++;
+                    if (ossz==2){
+                        j[akt].Pont(12);
+                        break;
+                    }
+                }
+            }
+        }
+        else if (feladat.getText().equals(feladatok[2])){
+            int ossz=0;
+            for (int i=0;i<5;i++){
+                ossz+=dobasok[i];
+            }
+            if (ossz%2==0){
+                j[akt].Pont(ossz);
+            }
+        }
+        else if (feladat.getText().equals(feladatok[3])){
+            int ossz=0;
+            for (int i=0;i<5;i++){
+                ossz+=dobasok[i];
+            }
+            if (ossz%2==1){
+                j[akt].Pont(ossz);
+            }
+        }
+        else if (feladat.getText().equals(feladatok[4])){
+             int ossz=0;
+            for (int i=0;i<5;i++){
+                if (dobasok[i]==6){
+                    ossz++;
+                }
+            }
+            if (ossz==1){
+                j[akt].Pont(10);
+                      
+            }
+        }
+        else if (feladat.getText().equals(feladatok[5])){
+            int ossz=0;
+            for (int i=0;i<5;i++){
+                if (dobasok[i]==6){
+                    ossz++;
+                }
+            }
+            if (ossz==2){
+                j[akt].Pont(15);
+                      
+            }
+        }
+        else if (feladat.getText().equals(feladatok[6])){
+             int ossz=0;
+            for (int i=0;i<5;i++){
+                ossz+=dobasok[i];
+            }
+            if (ossz<=8){
+                j[akt].Pont(ossz*2);
+            }
+        }
+        feladat.setText("Dobottak: "+dobasok[0]+", "+dobasok[1]+", "+dobasok[2]+", "+dobasok[3]+", "+dobasok[4]);
+        jButton2.setText("Tovább");
+        }
+        else{
+        akt=0;
+        jLabel14.setVisible(true);
+           jLabel15.setVisible(true);
+           jLabel16.setVisible(true);
+           jLabel17.setVisible(true);
+           jLabel18.setVisible(true);
+           jLabel19.setVisible(true);
+           jLabel20.setVisible(true);
+           jLabel21.setVisible(true);
+           jLabel22.setVisible(true);
+           
+           par10.setVisible(true);
+           par1.setVisible(true);
+           trip10.setVisible(true);
+           trip1.setVisible(true);
+           quad10.setVisible(true);
+           quad1.setVisible(true);
+           poker10.setVisible(true);
+           poker1.setVisible(true);
+           dp10.setVisible(true);
+           dp1.setVisible(true);
+           ks10.setVisible(true);
+           ks1.setVisible(true);
+           ns10.setVisible(true);
+           ns1.setVisible(true);
+           fh10.setVisible(true);
+           fh1.setVisible(true);
+           kuka10.setVisible(true);
+           kuka1.setVisible(true);
+           UpdateOsszpont();
+           quiz.setVisible(false);
+           aktualisjatekosneve.setText(nevek[akt]);
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(JatekterGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(JatekterGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(JatekterGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(JatekterGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new JatekterGUI().setVisible(true);
+            }
+        });
+    }
+   public void UpdateOsszpont(){
+        String nums=j[akt].Pont()+"";
+        System.out.println(nums);
+        if (nums.length()==1){
+            p1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+nums+".png")));
+            p10.setIcon(new ImageIcon(getClass().getResource("/design/sz0.png")));
+            p100.setIcon(new ImageIcon(getClass().getResource("/design/sz0.png")));
+        }
+        else if (nums.length()==2){
+            p1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+nums.substring(1, 2)+".png")));
+            p10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+nums.substring(0, 1)+".png")));
+            p100.setIcon(new ImageIcon(getClass().getResource("/design/sz0.png")));
+        }
+        else{
+            p1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+nums.substring(2, 3)+".png")));
+            p10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+nums.substring(1, 2)+".png")));
+            p100.setIcon(new ImageIcon(getClass().getResource("/design/sz"+nums.substring(0, 1)+".png")));
+        }
+        j[akt].ujKor();
+        korok.setText(j[akt].getKor()+"/3");
+        doboemberke.setIcon(new ImageIcon(getClass().getResource("/design/doboharomszog1.png")));
+        UpdateKocka();
+        System.out.println(j[akt].Vege());
+        if (j[akt].Vege() && akt==0){
+           masikjatekos2();
+        }
+        else if (j[akt].Vege() && akt==1){
+            
+            if (j[0].Pont()>j[1].Pont()){
+                vege.setText(nevek[0]+" nyerte a játékot");
+            }
+            else if (j[0].Pont()<j[1].Pont()){
+                vege.setText(nevek[1]+" nyerte a játékot");
+            }
+            else {
+                vege.setText("döntetlen");
+            }
+            Jatekter.setVisible(false);
+            vege.setVisible(true);
+        }
+   }
+   public void UpdateKocka(){
+       f1.setVisible(!j[akt].getDobhato()[0]);
+       f2.setVisible(!j[akt].getDobhato()[1]);
+       f3.setVisible(!j[akt].getDobhato()[2]);
+       f4.setVisible(!j[akt].getDobhato()[3]);
+       f5.setVisible(!j[akt].getDobhato()[4]);
+   }
+   public void masodikKor(){
+       if (j[akt].kovetkezoKOR() && akt==1){
+           if (j[0].Pont()>j[1].Pont()){
+           akt=0;
+           aktualisjatekosneve.setText(nevek[akt]);
+           jLabel30.setText(nevek[akt]+" nyerte az első kört, most egy feladat áll elébe");
+           quiz.setVisible(true);}
+           else if (j[0].Pont()<j[1].Pont()){
+           akt=1;
+           aktualisjatekosneve.setText(nevek[akt]);
+           jLabel30.setText(nevek[akt]+" nyerte az első kört, most egy feladat áll elébe");
+           quiz.setVisible(true);}
+           else{
+           
+           jLabel14.setVisible(true);
+           jLabel15.setVisible(true);
+           jLabel16.setVisible(true);
+           jLabel17.setVisible(true);
+           jLabel18.setVisible(true);
+           jLabel19.setVisible(true);
+           jLabel20.setVisible(true);
+           jLabel21.setVisible(true);
+           jLabel22.setVisible(true);
+           
+           par10.setVisible(true);
+           par1.setVisible(true);
+           trip10.setVisible(true);
+           trip1.setVisible(true);
+           quad10.setVisible(true);
+           quad1.setVisible(true);
+           poker10.setVisible(true);
+           poker1.setVisible(true);
+           dp10.setVisible(true);
+           dp1.setVisible(true);
+           ks10.setVisible(true);
+           ks1.setVisible(true);
+           ns10.setVisible(true);
+           ns1.setVisible(true);
+           fh10.setVisible(true);
+           fh1.setVisible(true);
+           kuka10.setVisible(true);
+           kuka1.setVisible(true);
+           
+           akt=0;
+           UpdateOsszpont();
+           } 
+           jLabel7.setVisible(false);
+           jLabel8.setVisible(false);
+           jLabel9.setVisible(false);
+           jLabel10.setVisible(false);
+           jLabel11.setVisible(false);
+           jLabel12.setVisible(false);
+           
+           
+       }
+       else if (j[akt].kovetkezoKOR() && akt==0) {
+           akt=1;
+           UpdateOsszpont();
+           masikjatekos();
+           
+       }
+   }
+   public void masikjatekos(){
+       jLabel8.setIcon(new ImageIcon(getClass().getResource("/design/1z.png")));
+       jLabel8.setText("");
+       jLabel9.setIcon(new ImageIcon(getClass().getResource("/design/2z.png")));
+       jLabel9.setText("");
+       jLabel10.setIcon(new ImageIcon(getClass().getResource("/design/3z.png")));
+       jLabel10.setText("");
+       jLabel11.setIcon(new ImageIcon(getClass().getResource("/design/4z.png")));
+       jLabel11.setText("");
+       jLabel12.setIcon(new ImageIcon(getClass().getResource("/design/5z.png")));
+       jLabel12.setText("");
+       jLabel7.setIcon(new ImageIcon(getClass().getResource("/design/6z.png")));
+       jLabel7.setText("");
+       aktualisjatekosneve.setText(nevek[akt]);
+       
+   }
+   
+   public void masikjatekos2(){
+       akt=1;
+       UpdateOsszpont();
+       aktualisjatekosneve.setText(nevek[akt]);
+      jLabel14.setIcon(new ImageIcon(getClass().getResource("/design/parz.png")));
+ jLabel15.setIcon(new ImageIcon(getClass().getResource("/design/tripz.png")));
+jLabel16.setIcon(new ImageIcon(getClass().getResource("/design/quadz.png")));
+jLabel17.setIcon(new ImageIcon(getClass().getResource("/design/pokerz.png")));
+jLabel18.setIcon(new ImageIcon(getClass().getResource("/design/dpz.png")));
+ jLabel19.setIcon(new ImageIcon(getClass().getResource("/design/ksz.png")));
+jLabel20.setIcon(new ImageIcon(getClass().getResource("/design/nsz.png")));
+jLabel21.setIcon(new ImageIcon(getClass().getResource("/design/fhz.png")));
+ jLabel22.setIcon(new ImageIcon(getClass().getResource("/design/kukaz.png")));
+
+kuka1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+            kuka10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+
+fh1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+            fh10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+
+ns1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+            ns10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+
+ks1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+            ks10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+
+            dp1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+            dp10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+
+poker1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+            poker10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+
+            quad1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+            quad10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+
+trip1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+            trip10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+
+par1.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+            par10.setIcon(new ImageIcon(getClass().getResource("/design/sz"+0+".png")));
+       
+   }
+   public void elsokorvege(){
+       
+   }
+  
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Jatekter;
+    private javax.swing.JPanel Sugo;
+    private javax.swing.JLabel aktualisjatekosneve;
+    private javax.swing.JLabel doboemberke;
+    private javax.swing.JLabel dp1;
+    private javax.swing.JLabel dp10;
+    private javax.swing.JLabel egyeskocka;
+    private javax.swing.JLabel f1;
+    private javax.swing.JLabel f2;
+    private javax.swing.JLabel f3;
+    private javax.swing.JLabel f4;
+    private javax.swing.JLabel f5;
+    private javax.swing.JLabel feladat;
+    private javax.swing.JLabel fh1;
+    private javax.swing.JLabel fh10;
+    private javax.swing.JLabel harmaskocka;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea5;
+    private javax.swing.JLabel ketteskocka;
+    private javax.swing.JLabel korok;
+    private javax.swing.JLabel ks1;
+    private javax.swing.JLabel ks10;
+    private javax.swing.JLabel kuka1;
+    private javax.swing.JLabel kuka10;
+    private javax.swing.JLabel negyeskocka;
+    private javax.swing.JLabel ns1;
+    private javax.swing.JLabel ns10;
+    private javax.swing.JLabel otoskocka;
+    private javax.swing.JLabel p1;
+    private javax.swing.JLabel p10;
+    private javax.swing.JLabel p100;
+    private javax.swing.JLabel par1;
+    private javax.swing.JLabel par10;
+    private javax.swing.JLabel poker1;
+    private javax.swing.JLabel poker10;
+    private javax.swing.JLabel quad1;
+    private javax.swing.JLabel quad10;
+    private javax.swing.JPanel quiz;
+    private javax.swing.JLabel trip1;
+    private javax.swing.JLabel trip10;
+    private javax.swing.JLabel vege;
+    // End of variables declaration//GEN-END:variables
+}
